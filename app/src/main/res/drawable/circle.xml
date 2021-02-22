@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+                android:shape="oval">
+
+            <solid android:color="@color/colorAccent" />
+
+            <size
+                android:width="55dp"
+                android:height="55dp" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/cinema"
+        android:gravity="center_horizontal"
+        android:top="10dp"
+        android:bottom="34dp"
+        android:right="8dp"
+        android:left="8dp"/>
+</layer-list>

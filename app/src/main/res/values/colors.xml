@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ea5630</color>
+    <color name="colorPrimaryDark">#ba4426</color>
+    <color name="colorAccent">#fbe22e</color>
+    <color name="toolbar_text">#ffffff</color>
+    <color name="backgroundColor">#414a51</color>
+    <color name="backgroundColorListView">#e9e9e9</color>
+    <color name="backgroundColor_half_translucent">#7f414a51</color>
+    <color name="information">#828280</color>
+
+    <color name="colorPrimaryDark_half_translucent">#96ba4426</color>
+</resources>

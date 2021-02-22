@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.cineaste.android.fragment.SeasonDetailFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/episodeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:paddingTop="32dp"
+        android:text="@string/no_episodes"
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="@android:color/white"/>
+</LinearLayout>

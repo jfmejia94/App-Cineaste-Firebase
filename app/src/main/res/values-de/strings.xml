@@ -1,0 +1,86 @@
+<resources>
+    <string name="open">Offen</string>
+    <string name="close">Geschlossen</string>
+    <string name="search">Suche</string>
+    <plurals name="movieCounter">
+        <item quantity="one">Film: %d</item>
+        <item quantity="other">Filme: %d</item>
+    </plurals>
+    <string name="result">Ergebnis</string>
+
+    <string name="enter_username">Dein Benutzername</string>
+    <string name="noMoviesOnWatchList">Du hast noch keine Filme auf deiner Watchlist. \nUnten Rechts fügst du neue Titel hinzu!</string>
+    <string name="noMoviesOnWatchedList">Du hast noch keine Filme in deiner Historie. \nZieh dir doch einen Titel rein!</string>
+    <string name="noSeriesOnWatchList">Du hast noch keine Serien auf deiner Watchlist. \nUnten Rechts fügst du neue Titel hinzu!</string>
+    <string name="noSeriesOnWatchedList">Du hast noch keine Serien in deiner Historie. \nZieh dir doch eine rein!</string>
+    <string name="searching_for_friends">Suche nach Freunden</string>
+    <string name="no_friends_found_try_again">Keine Freunde gefunden, versuche es erneut!</string>
+
+    <string name="watchList">Musst du sehen</string>
+    <string name="history">Schon gesehen</string>
+
+    <string name="exportSucceeded">Export war erfolgreich</string>
+    <string name="exportFailed">Export ist fehlgeschlagen</string>
+
+    <string name="importHeadline">Import</string>
+    <string name="importedMovies">%s Filme importiert</string>
+    <string name="importedMoviesFailed">Film Import fehlgeschlagen</string>
+    <string name="importedSeries">%s Serien importiert</string>
+    <string name="importedSeriesFailed">Serien Import fehlgeschlagen</string>
+
+    <string name="missing_permission">Import/Export Berechtigungen fehlen</string>
+    <string name="posterDescription">Poster</string>
+    <string name="remove">Film entfernen</string>
+    <string name="noInternet">Keine Internetverbindung!</string>
+    <string name="runtime">%d min</string>
+    <string name="vote">%s/10</string>
+    <string name="releaseDate">Release</string>
+
+    <string name="movieTitle">Titel</string>
+    <string name="noDescription">Keine Beschreibung vorhanden</string>
+    <string name="movieAdd">%s hinzugefügt</string>
+
+    <string name="undo">Rückgängig machen</string>
+    <string name="movie_deleted">Film gelöscht</string>
+    <string name="series_deleted">Serie gelöscht</string>
+    <string name="movie_seen">Schon gesehen</string>
+    <string name="series_seen">Schon gesehen</string>
+    <string name="watch_now">Jetzt anschauen</string>
+    <string name="not_seen">Muss ich sehen</string>
+    <string name="poster_reloaded">Poster mit höherer Auflösung geladen.</string>
+    <string name="sort_by_alpha">Sortieren nach Alphabet</string>
+    <string name="sort_by_release">Sortieren nach Erscheinungsdatum</string>
+    <string name="sort_by_runtime">Sortieren nach Laufzeit</string>
+    <string name="delete">Löschen</string>
+    <plurals name="movieTitle">
+        <item quantity="one">%d Film</item>
+        <item quantity="other">%d Filme</item>
+    </plurals>
+    <plurals name="seriesTitle">
+        <item quantity="one">%d Serie</item>
+        <item quantity="other">%d Serien</item>
+    </plurals>
+    <string name="movies">Filme</string>
+    <string name="series">Serien</string>
+    <string name="seasons">Staffeln: %s</string>
+    <string name="episodes">Folgen: %s</string>
+    <string name="currentStatus">Mein Stand: Staffel %s, Episode %s</string>
+    <string name="currentSeason">Staffel %s</string>
+    <string name="season_description">Staffeln:</string>
+    <string name="description">Beschreibung:</string>
+    <string name="more">mehr</string>
+    <string name="to_be_continued">Fortsetzung folgt</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="ok">OK</string>
+    <string name="seriesSeenHeadline">%s gesehen</string>
+    <string name="seriesStillInProduction">Die Serie ist immer noch in Produktion, trotzdem verschieben?</string>
+    <string name="share">Teilen</string>
+    <string name="share_movie">Film teilen</string>
+    <string name="share_series">Serie teilen</string>
+    <string name="no_episodes">Keine Episoden verfügbar</string>
+    <string name="notAvailableDuringSearch">Nicht verfügbar während der Suche</string>
+    <string name="more_info">Weitere Infos</string>
+    <string name="all_movies">Alle Filme</string>
+    <string name="movie_counter">%d von %d</string>
+    <string name="coming_soon">Demnächst</string>
+</resources>

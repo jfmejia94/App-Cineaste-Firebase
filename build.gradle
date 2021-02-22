@@ -1,0 +1,31 @@
+buildscript {
+    ext.kotlin_version = '1.4.10'
+    ext.tools_version = '4.1.2'
+    ext.build_tools_version = '29.0.3'
+    ext.sdk_version = 30
+    ext.ax_version = '1.0.0'
+
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$tools_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Add the following line:
+        classpath 'com.google.gms:google-services:4.3.4'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,89 @@
+<resources>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="search">Search</string>
+    <plurals name="movieCounter">
+        <item quantity="one">Movie: %d</item>
+        <item quantity="other">Movies: %d</item>
+    </plurals>
+    <string name="result">Result</string>
+
+    <string name="enter_username">Your Username</string>
+    <string name="noMoviesOnWatchList">You do not have movies on your Watchlist. \nOn the bottom right you can add new titles!</string>
+    <string name="noMoviesOnWatchedList">You do not have movies on your Watchedlist. \nGo ahead and watch one!</string>
+    <string name="noSeriesOnWatchList">You do not have series on your Watchlist. \nOn the bottom right you can add new titles!</string>
+    <string name="noSeriesOnWatchedList">You do not have series on your Watchedlist. \nGo ahead and watch one!</string>
+    <string name="searching_for_friends">Searching for friends</string>
+    <string name="no_friends_found_try_again">No friends found, try again!</string>
+
+    <string name="watchList">Watchlist</string>
+    <string name="history">History</string>
+
+    <string name="exportSucceeded">Export succeeded</string>
+    <string name="exportFailed">Export failed</string>
+
+    <string name="importHeadline">Import</string>
+    <string name="importedMovies">%s movies imported</string>
+    <string name="importedMoviesFailed">Movie import failed</string>
+    <string name="importedSeries">%s series imported</string>
+    <string name="importedSeriesFailed">Series import failed</string>
+
+
+    <string name="missing_permission">Import/Export Permissions missing</string>
+    <string name="posterDescription">Poster</string>
+    <string name="remove">Remove movie</string>
+    <string name="noInternet">No internet-connection!</string>
+    <string name="runtime">%d min</string>
+    <string name="vote">%s/10</string>
+    <string name="releaseDate">Release</string>
+
+    <string name="movieTitle">Title</string>
+    <string name="noDescription">No description available</string>
+    <string name="movieAdd">Added %s</string>
+
+    <string name="undo">Undo</string>
+    <string name="movie_deleted">Movie deleted</string>
+    <string name="series_deleted">Series deleted</string>
+    <string name="movie_seen">Watched</string>
+    <string name="series_seen">Series watched</string>
+    <string name="not_seen">Must see</string>
+    <string name="watch_now">Watch now</string>
+    <string name="poster_reloaded">Poster with higher resolution loaded</string>
+    <string name="sort_by_alpha">Sort alphabetically</string>
+    <string name="sort_by_release">Sort by release date</string>
+    <string name="sort_by_runtime">Sort by release date</string>
+    <string name="delete">Delete</string>
+
+    <plurals name="movieTitle">
+        <item quantity="one">%d Movie</item>
+        <item quantity="other">%d Movies</item>
+    </plurals>
+    <plurals name="seriesTitle">
+        <item quantity="one">%d Series</item>
+        <item quantity="other">%d Series</item>
+    </plurals>
+    <string name="movies">Movies</string>
+    <string name="series">Series</string>
+    <string name="seasons">Seasons: %s</string>
+    <string name="episodes">Episodes: %s</string>
+    <string name="currentStatus">My status: Season %s, Episode %s</string>
+    <string name="currentSeason">Season %s</string>
+    <string name="season_description">Seasons:</string>
+    <string name="description">Description:</string>
+    <string name="more">more</string>
+    <string name="to_be_continued">To be continued</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="seriesSeenHeadline">%s watched</string>
+    <string name="seriesStillInProduction">The series is still in production, but move to history?</string>
+    <string name="share">Share</string>
+    <string name="share_movie">Share movie</string>
+    <string name="share_series">Share series</string>
+    <string name="no_episodes">No episodes available</string>
+    <string name="notAvailableDuringSearch">Not available during search</string>
+    <string name="more_info">More Info</string>
+    <string name="all_movies">All Movies</string>
+    <string name="movie_counter">%d of %d</string>
+    <string name="coming_soon">coming soon</string>
+
+</resources>

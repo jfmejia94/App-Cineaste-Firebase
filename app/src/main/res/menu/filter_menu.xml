@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="@string/search"/>
+    <item android:id="@+id/filterAlphabetical"
+        android:title="@string/sort_by_alpha"
+        android:icon="@drawable/ic_sort_by_alpha"
+        app:showAsAction="never"/>
+    <item android:id="@+id/filterReleaseDate"
+        android:title="@string/sort_by_release"
+        app:showAsAction="never"/>
+    <item android:id="@+id/filterRunTime"
+        android:title="@string/sort_by_runtime"
+        app:showAsAction="never" />
+</menu>
