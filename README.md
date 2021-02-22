@@ -1,36 +1,61 @@
-# Cineaste
+## Como configurar
 
-[![Build Status](https://travis-ci.com/spacepandas/cineaste-android.svg?branch=master)](https://travis-ci.org/spacepandas/cineaste-android.svg?branch=master)
-[![code](https://img.shields.io/badge/code-Kotlin-blue.svg)]()
-[![license](https://img.shields.io/badge/license-GPLv3-lightgrey.svg)](https://github.com/marcelgross90/Cineaste/blob/master/LICENSE)
-[![platform](https://img.shields.io/badge/platform-android-lightgrey.svg)]()
-
-An Android (and iOS) application to manage movies you would like to see and movies you have seen.
-
-<a href='https://play.google.com/store/apps/details?id=de.cineaste.android&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png' height="45px"/></a>
-
-Check out the [iOS client](https://github.com/spacepandas/cineaste-ios) on GitHub. It is available on the App Store.
-
-<a href='https://itunes.apple.com/us/app/cineaste-app/id1402748020'><img alt='Download on the App Store' img src='https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg' width="152" height="45"/></a>
-
-## Dependencies
-
-We are using [theMovieDb][theMovieDb] to get access to the big movie data universe.
-
-## How to build
-
-1. Get a [theMovieDb][theMovieDb] key.
-2. Create `secrets.xml` in `res/values` and place your moviedb key inside it.
+1. Se crea la api key de [theMovieDb] para poder configurar las peliculas y series de la aplicación.
+2. Crear `secrets.xml` in `res/values` y agregar la key generada.
 ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <resources>
         <string name="movieKey">XXXX</string>
     </resources>
 ```
-3. Continue with normal development or building process.
+3. Luego de generar la key se procede a instalar firebase, para esto utilizamos android estudio para implementar en android.
+4. Crearemos una cuenta de firebase, donde agregaremos los siguientes campos para poder configurarlo.
+ - Nombre del paquete de Android (`de.cineaste.android`) y certificado de firma SHA-1 luego damos en ingresar.
+5. Luego descargamos el archivo google-services.json y lo pondremos en la raiz de la aplicación.
+6. Una vez tenemos el archivo de google services procedemos a importar librerias a tus archivos Gradle.
 
-## License
+`(build.gradle) en raiz `
+```  
+buildscript {
+  repositories {
+   google()
+  }
+  dependencies {
+    classpath 'com.google.gms:google-services:4.3.4'
+  }
+}
+allprojects {
+    repositories {
+        google()
+    }
 
-Cineaste is released under the **GPL V3 Open Source License**. Please see the [LICENSE](https://github.com/marcelgross90/Cineaste/blob/master/LICENSE) file for more information.
+    dependencies {
+      implementation platform('com.google.firebase:firebase-bom:26.3.0')
+      implementation 'com.google.firebase:firebase-analytics-ktx'
+      implementation 'com.google.firebase:firebase-auth-ktx'
+      implementation 'com.google.firebase:firebase-firestore-ktx'
+    }
+}
+```
+`(app/build.gradle) `
+``` 
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services' 
+``` 
+ 
+7. Ya luego de esto podemos instanciar en las actividades el objeto FirebaseAnalytics y logEvent() para empezar a enviar eventos a Google Analytics.
 
-[theMovieDb]: https://www.themoviedb.org/
+- `private lateinit var firebaseAnalytics: FirebaseAnalytics` (importamos el objeto) en MainActivity
+- `firebaseAnalytics = Firebase.analytics` (instanciamos el objeto) en onCreate() metodo encargado de iniciar firebase.
+
+8. Ya con firebase instalado podemos proceder a implementar las etiquetas para mejor eventos en nuestra aplicación, teniendo en cuenta que existe etiquetas por deferecto.
+  Para crear una etiqueta lo hacemos de la siguiente forma:
+  
+``` 
+firebaseAnalytics.logEvent("addToWhislist") {
+    param("nombre", name)
+    param("calificacion", text)
+}
+ ``` 
+ 
+
